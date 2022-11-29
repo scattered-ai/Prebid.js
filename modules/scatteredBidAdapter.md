@@ -26,7 +26,7 @@ It uses OpenRTB standard to communicate between the adapter and bidding servers.
                 {
                     bidder: "scattered",
                     params: {
-                        bidderDomain: "https://prebid.scattered.eu"
+                        bidderDomain: "prebid.scattered.eu/bid",
                         test: 0
                     }
                 }

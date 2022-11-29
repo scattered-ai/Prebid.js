@@ -81,6 +81,13 @@ describe('Scattered adapter', function () {
       gdprConsent: { consentString: 'BOtmiBKOtmiBKABABAENAFAAAAACeAAA', gdprApplies: true },
       refererInfo: {
         referer: 'http://localhost:9999/integrationExamples/gpt/hello_world.html?pbjs_debug=true',
+      },
+      ortb2: {
+        site: {
+          publisher: {
+            name: 'publisher1 INC.'
+          }
+        }
       }
     }
 
@@ -114,13 +121,6 @@ describe('Scattered adapter', function () {
           id: '876',
           publisher: {
             domain: 'publisher1.eu'
-          }
-        },
-        ortb2: {
-          site: {
-            publisher: {
-              name: 'publisher1 INC.'
-            }
           }
         }
       });

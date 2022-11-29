@@ -55,7 +55,7 @@ export const spec = {
 
   // 2.
   buildRequests: function (validBidRequests, bidderRequest) {
-    const ortb2Obj = getConfig('ortb2') || {};
+    const ortb2Obj = bidderRequest.ortb2 || {};
     let { user } = ortb2Obj
 
     let site = getConfig('site') || {};
@@ -144,7 +144,7 @@ export const spec = {
             result.dealId = bidResponse.dealid
           }
 
-          // insert pixel into markap that will call us
+          // insert pixel into markup that will call us
           if (bidResponse.nurl) {
             result.ad += createTrackPixelHtml(bidResponse.nurl)
           }
