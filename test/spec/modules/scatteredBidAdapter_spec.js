@@ -3,8 +3,6 @@ import { assert } from 'chai';
 import { config } from 'src/config.js';
 import { deepClone } from '../../../src/utils';
 describe('Scattered adapter', function () {
-  // YOLO run in debug mode
-  config.setConfig({ debug: true })
 
   describe('isBidRequestValid', function () {
     // A valid bid

@@ -35,7 +35,6 @@ export function buildImps(validBidRequests) {
 
 export const spec = {
   code: BIDDER_CODE,
-  gvlid: -1,
   supportedMediaTypes: [BANNER],
 
   // 1.
